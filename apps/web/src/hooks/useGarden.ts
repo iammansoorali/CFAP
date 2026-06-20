@@ -1,0 +1,1 @@
+export function useGarden(){return {trees:23,level:3};}
