@@ -1,0 +1,1 @@
+export default function WrappedPage(){return <div><h1>🎉 Your Year Wrapped</h1></div>}
