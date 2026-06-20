@@ -1,0 +1,1 @@
+export function useLeaderboardStats(){return {rank:12,points:845};}
