@@ -1,0 +1,1 @@
+export const storage={save:(k:string,v:string)=>localStorage.setItem(k,v),load:(k:string)=>localStorage.getItem(k)};
