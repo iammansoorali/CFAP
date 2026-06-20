@@ -1,0 +1,1 @@
+export function useLeaderboard(){return [{name:'Alex',score:120},{name:'Mansoor',score:115}];}
