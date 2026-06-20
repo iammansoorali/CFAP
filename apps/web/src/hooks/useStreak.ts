@@ -1,0 +1,1 @@
+export function useStreak(){return {current:14,best:31};}
