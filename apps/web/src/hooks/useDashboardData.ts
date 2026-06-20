@@ -1,0 +1,1 @@
+export function useDashboardData(){return {co2:420,trees:19,health:'Healthy'};}
