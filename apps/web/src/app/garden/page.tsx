@@ -1,0 +1,1 @@
+export default function GardenPage(){return <div><h1>🌳 Garden</h1></div>}
