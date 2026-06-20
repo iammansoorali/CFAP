@@ -28,3 +28,8 @@ model Goal {
   userId  String
   user    User @relation(fields: [userId], references: [id])
 }
+
+model CarbonEntry {
+  id              String @id @default(uuid())
+  totalEmissionKg Float
+}
