@@ -1,0 +1,1 @@
+export function useAchievements(){return [{name:'Eco Warrior',streak:7}];}
