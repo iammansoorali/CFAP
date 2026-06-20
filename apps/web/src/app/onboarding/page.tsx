@@ -1,0 +1,1 @@
+export default function OnboardingPage(){return <div><h1>🌱 Welcome to CarbonWise</h1></div>}
