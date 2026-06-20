@@ -1,0 +1,1 @@
+export function useStats(){return {weeklyCO2:12,monthlyCO2:48,rank:'Top 10%'};}
