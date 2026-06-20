@@ -1,0 +1,1 @@
+export function useProfile(){return {name:'Mansoor',level:'Planet Protector'};}
