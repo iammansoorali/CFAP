@@ -1,0 +1,1 @@
+export function useInsights(){return {tip:'Use public transport twice a week',impact:8};}
