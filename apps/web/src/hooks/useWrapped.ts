@@ -1,0 +1,1 @@
+export function useWrapped(){return {co2Saved:420,treesSaved:23};}
