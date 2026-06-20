@@ -1,0 +1,1 @@
+export default function EcoStreakWidget(){return <div>🔥 14 Day Streak</div>}
