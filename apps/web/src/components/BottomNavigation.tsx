@@ -1,0 +1,1 @@
+export function BottomNavigation(){return <nav>🏠 🎯 🌳 🌎 👤</nav>}
