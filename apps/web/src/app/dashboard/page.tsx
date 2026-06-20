@@ -1,2 +1,1 @@
-import { useDashboardData } from '../../hooks/useDashboardData';
-export default function DashboardPage(){const data=useDashboardData();return <div>{data.health}</div>;}
+import { useDashboardData } from '../../hooks/useDashboardData'; export default function DashboardPage(){const data=useDashboardData();return <div><h1>{data.health}</h1><p>CO2: {data.co2}</p><p>Trees: {data.trees}</p></div>;}
