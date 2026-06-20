@@ -1,0 +1,1 @@
+export default function TerraPage(){return <div><h1>🌎 Terra</h1></div>}
