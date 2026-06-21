@@ -1,1 +1,46 @@
-import { useDashboardData } from '../../hooks/useDashboardData'; export default function DashboardPage(){const data=useDashboardData();return <div><h1>{data.health}</h1><p>CO2: {data.co2}</p><p>Trees: {data.trees}</p></div>;}
+"use client";
+
+import AnimatedCard from "../../components/AnimatedCard";
+import EcoStreakWidget from "../../components/EcoStreakWidget";
+import ImpactSummary from "../../components/ImpactSummary";
+import AchievementsTimeline from "../../components/AchievementsTimeline";
+import ProfileBadges from "../../components/ProfileBadges";
+import CarbonTrendChart from "../../components/CarbonTrendChart";
+import MonthlyChart from "../../components/MonthlyChart";
+import YearlyChart from "../../components/YearlyChart";
+
+export default function DashboardPage() {
+  return (
+    <div>
+      <h1>🌍 CarbonWise Dashboard</h1>
+
+      <AnimatedCard>
+        <EcoStreakWidget />
+      </AnimatedCard>
+
+      <AnimatedCard>
+        <ImpactSummary />
+      </AnimatedCard>
+
+      <AnimatedCard>
+        <AchievementsTimeline />
+      </AnimatedCard>
+
+      <AnimatedCard>
+        <ProfileBadges />
+      </AnimatedCard>
+
+      <AnimatedCard>
+        <CarbonTrendChart />
+      </AnimatedCard>
+
+      <AnimatedCard>
+        <MonthlyChart />
+      </AnimatedCard>
+
+      <AnimatedCard>
+        <YearlyChart />
+      </AnimatedCard>
+    </div>
+  );
+}
