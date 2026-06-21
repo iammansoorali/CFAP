@@ -1,1 +1,11 @@
-export default function EcoStreakWidget(){return <div>🔥 14 Day Streak</div>}
+import { useStreak } from "../hooks/useStreak";
+
+export default function EcoStreakWidget() {
+  const { current } = useStreak();
+
+  return (
+    <div>
+      🔥 {current} Day Streak
+    </div>
+  );
+}
