@@ -2,8 +2,8 @@
 
 import {
   ResponsiveContainer,
-  LineChart,
-  Line,
+  AreaChart,
+  Area,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -20,16 +20,16 @@ const data = [
 export default function CarbonTrendChart() {
   return (
     <ResponsiveContainer width="100%" height={300}>
-      <LineChart data={data}>
+      <AreaChart data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="week" />
         <YAxis />
         <Tooltip />
-        <Line
+        <Area
           type="monotone"
           dataKey="carbon"
         />
-      </LineChart>
+      </AreaChart>
     </ResponsiveContainer>
   );
 }
