@@ -2,6 +2,7 @@
 
 import PageTransition from "../../components/PageTransition";
 import AnimatedCard from "../../components/AnimatedCard";
+import ThemeToggle from "../../components/ThemeToggle";
 import EcoStreakWidget from "../../components/EcoStreakWidget";
 import ImpactSummary from "../../components/ImpactSummary";
 import AchievementsTimeline from "../../components/AchievementsTimeline";
@@ -15,34 +16,14 @@ export default function DashboardPage() {
     <PageTransition>
       <div>
         <h1>🌍 CarbonWise Dashboard</h1>
-
-        <AnimatedCard>
-          <EcoStreakWidget />
-        </AnimatedCard>
-
-        <AnimatedCard>
-          <ImpactSummary />
-        </AnimatedCard>
-
-        <AnimatedCard>
-          <AchievementsTimeline />
-        </AnimatedCard>
-
-        <AnimatedCard>
-          <ProfileBadges />
-        </AnimatedCard>
-
-        <AnimatedCard>
-          <CarbonTrendChart />
-        </AnimatedCard>
-
-        <AnimatedCard>
-          <MonthlyChart />
-        </AnimatedCard>
-
-        <AnimatedCard>
-          <YearlyChart />
-        </AnimatedCard>
+        <ThemeToggle />
+        <AnimatedCard><EcoStreakWidget /></AnimatedCard>
+        <AnimatedCard><ImpactSummary /></AnimatedCard>
+        <AnimatedCard><AchievementsTimeline /></AnimatedCard>
+        <AnimatedCard><ProfileBadges /></AnimatedCard>
+        <AnimatedCard><CarbonTrendChart /></AnimatedCard>
+        <AnimatedCard><MonthlyChart /></AnimatedCard>
+        <AnimatedCard><YearlyChart /></AnimatedCard>
       </div>
     </PageTransition>
   );
