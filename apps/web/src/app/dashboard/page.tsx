@@ -1,5 +1,6 @@
 "use client";
 
+import PageTransition from "../../components/PageTransition";
 import AnimatedCard from "../../components/AnimatedCard";
 import EcoStreakWidget from "../../components/EcoStreakWidget";
 import ImpactSummary from "../../components/ImpactSummary";
@@ -11,36 +12,38 @@ import YearlyChart from "../../components/YearlyChart";
 
 export default function DashboardPage() {
   return (
-    <div>
-      <h1>🌍 CarbonWise Dashboard</h1>
+    <PageTransition>
+      <div>
+        <h1>🌍 CarbonWise Dashboard</h1>
 
-      <AnimatedCard>
-        <EcoStreakWidget />
-      </AnimatedCard>
+        <AnimatedCard>
+          <EcoStreakWidget />
+        </AnimatedCard>
 
-      <AnimatedCard>
-        <ImpactSummary />
-      </AnimatedCard>
+        <AnimatedCard>
+          <ImpactSummary />
+        </AnimatedCard>
 
-      <AnimatedCard>
-        <AchievementsTimeline />
-      </AnimatedCard>
+        <AnimatedCard>
+          <AchievementsTimeline />
+        </AnimatedCard>
 
-      <AnimatedCard>
-        <ProfileBadges />
-      </AnimatedCard>
+        <AnimatedCard>
+          <ProfileBadges />
+        </AnimatedCard>
 
-      <AnimatedCard>
-        <CarbonTrendChart />
-      </AnimatedCard>
+        <AnimatedCard>
+          <CarbonTrendChart />
+        </AnimatedCard>
 
-      <AnimatedCard>
-        <MonthlyChart />
-      </AnimatedCard>
+        <AnimatedCard>
+          <MonthlyChart />
+        </AnimatedCard>
 
-      <AnimatedCard>
-        <YearlyChart />
-      </AnimatedCard>
-    </div>
+        <AnimatedCard>
+          <YearlyChart />
+        </AnimatedCard>
+      </div>
+    </PageTransition>
   );
 }
